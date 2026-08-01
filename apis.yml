@@ -1,7 +1,25 @@
 aid: scoopola
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scoopola.png
 name: Scoopola
-description: Scoopola is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Scoopola was an early-stage consumer startup backed by 500 Startups (Batch 2, June 2011),
+  pitched as "the HotelTonight for live music and theater" — a mobile app for discovering and
+  buying last-minute, discounted tickets to local live-music and theater events. The company
+  appears defunct; its associated web domains (getwillcall.com and scoopola.com) no longer
+  resolve, and there is no surviving developer portal, documentation, or public API surface.
+  This record is retained as a historical portfolio-lead stub; the enrichment pipeline found
+  no live API to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/scoopola/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,20 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence: getwillcall.com and scoopola.com return no DNS NS records (2026-07-21)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Defunct
+- Live Music
+- Theater
+- Ticketing
+- Events
+- 500 Startups
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,8 @@ maintainers:
 common:
 - type: Website
   url: https://getwillcall.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
